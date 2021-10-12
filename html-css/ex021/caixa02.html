@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header {
+            background-color: floralwhite;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1 {
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.226);
+        }
+        nav {
+            background-color: burlywood;
+            padding: 3px;
+            box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.226); /*shorthand*/
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: floralwhite;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px; /*faz as 4 bordas ficarem iguais, mas pode fazer cada canto numa configuração*/
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.226);
+        }
+        article {
+            background-color: lightgray;
+        }
+        article > aside {
+            background-color: lightgreen;
+            padding: 0px;
+        }
+        footer {
+            background-color: black;
+            color: blanchedalmond;
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            background-color: blanchedalmond;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section>
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae modi incidunt iusto, suscipit temporibus aperiam veniam. Omnis fugiat ea minus excepturi odit aspernatur inventore alias, sequi minima a! Perspiciatis, ipsa.
+                </p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Henrique</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
